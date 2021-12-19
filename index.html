@@ -7,25 +7,29 @@
     <title>Glass effect in css</title>
     <style>
       body {
-        background-color: gray;
+        background-image: url(http://bit.ly/2gPLxZ4); //add "" if you want
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
       }
       .glass-pane {
-        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+        background: white;
+        width: 30rem;
+        height: 20rem;
         border-radius: 5px;
+        position: absolute;
+        content: '';
+        left: 5em;
+        border-radius: 5px;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0.15);
-
-        backdrop-filter: blur(5px);
-
-        width: 500px;
-        height: 500px;
-        margin: 0 auto;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="glass-pane">WINDOW</div>
-    <div class="clas">
-      <script></script>
+    <div class="glass-pane">
+      <button>Click me</button>
     </div>
   </body>
 </html>
